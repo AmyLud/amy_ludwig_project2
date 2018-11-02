@@ -132,3 +132,114 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  html body {
+    font-size: 1.8rem; }
+  html a {
+    text-decoration: none; }
+  html ul {
+    list-style: none; }
+
+.wrapper {
+  border: 1px solid red;
+  width: 80%;
+  margin: 0 auto; }
+
+.content,
+.copyright {
+  font-family: "montserrat", sans-serif;
+  color: #1f1f1f;
+  font-size: 2rem; }
+
+.title--small, .title--small .title__link {
+  font-family: "AbrilFatface", serif;
+  color: #1f1f1f;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.title--large {
+  font-family: "AbrilFatface", serif;
+  color: #1f1f1f;
+  font-size: 4.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.main-title {
+  font-family: "AbrilFatface", serif;
+  color: #f6f6f6;
+  font-size: 8rem;
+  letter-spacing: 1px; }
+
+.main-title--main-page {
+  font-family: "AbrilFatface", serif;
+  color: #f6f6f6;
+  font-size: 20rem;
+  letter-spacing: 1px;
+  line-height: 20rem; }
+
+.more-button {
+  display: inline-block;
+  background: #e4a436; }
+  .more-button__link {
+    display: block;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-family: "AbrilFatface", serif;
+    color: #1f1f1f;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+
+.copyright {
+  background: #1f1f1f;
+  color: #f6f6f6;
+  padding: 1px; }
+  .copyright__message {
+    width: 30%;
+    margin: 2px auto; }
+
+.header--main {
+  background: #345231; }
+
+.main-title__prefix {
+  position: relative;
+  left: 75px;
+  bottom: 25px; }
+
+.top-bar {
+  border: 1px solid red;
+  background: #345231; }
+  .top-bar .top-nav {
+    padding: 0;
+    width: 50%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 10px; }
+    .top-bar .top-nav__item {
+      line-height: 3.2rem; }
+    .top-bar .top-nav__link {
+      display: block;
+      font-family: "montserrat", sans-serif;
+      color: #1f1f1f;
+      font-size: 1.8rem;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px; }
+    .top-bar .top-nav__link--large {
+      font-family: "AbrilFatface", serif;
+      color: #1f1f1f;
+      font-size: 3.2rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: white; }
+    .top-bar .top-nav__link--active {
+      color: #e4a436; }

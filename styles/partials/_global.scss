@@ -1,0 +1,71 @@
+// Globals
+
+html {
+     font-size: 62.5%;
+     body {
+          font-size: 1.8rem;
+     }
+     a {
+          text-decoration: none;
+     }
+     ul {
+          list-style: none;
+     }
+}
+
+// wrapper Globals
+
+.wrapper {
+     border: 1px solid red;
+     width: 80%;
+     margin: 0 auto;
+}
+
+// Font Globals
+
+.content,
+.copyright {
+     @include content-font(2rem);
+}
+
+.title--small {
+     @include title-font(3.2rem);
+     .title__link {
+          @extend .title--small;
+     }
+}
+.title--large {
+     @include title-font(4.2rem);
+}
+.main-title {
+     @include header-font(8rem);
+}
+.main-title--main-page {
+     @include header-font(20rem);
+     line-height: 20rem;
+}
+
+// Button Global
+
+.more-button {
+     display: inline-block;
+     background: $accentColor;
+     &__link {
+          display: block;
+          padding: 10px 20px;
+          font-weight: bold;
+          @include title-font(20px);
+          text-transform: uppercase;
+
+     }
+}
+
+.copyright {
+     background: $deepColor;
+     color: $lightColor;
+     padding: 1px;
+     &__message {
+          width: 30%;
+          margin: 2px auto;
+     }
+}

@@ -4,6 +4,29 @@ $accentColor: #e4a436;
 $deepColor: #1f1f1f;
 $lightColor: #f6f6f6;
 
+@mixin header-font($size) {
+     font-family: "AbrilFatface", serif;
+     color: $lightColor;
+     font-size: $size;
+     letter-spacing: 1px;
+}
+
+@mixin title-font($size) {
+     font-family: "AbrilFatface", serif;
+     color: $deepColor;
+     font-size: $size;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+}
+
+@mixin content-font($size) {
+     font-family: "montserrat", sans-serif;
+     color: $deepColor;
+     font-size: $size;
+     // letter-spacing: 1px;
+}
+
+
 
 
 
