@@ -1,0 +1,39 @@
+.journey-section {
+     background: $lightColor;
+     padding: 100px 0;
+     .wrapper {
+          border: 1px dashed black; 
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+
+     }
+
+     &__pic {
+          // border: 1px solid green;
+          flex: 0 0 280px;
+     }
+
+     &__img {
+          display: block;
+          width: 100%;
+          box-shadow: 20px 20px 0 $secondColor;
+
+     }
+
+     &__description {
+          // border: 1px solid green;
+          flex: 1 0 350px;
+          margin: 5px 0 0 100px; 
+     }
+
+     .title--large {
+          margin: 10px 0 0 0;
+     }
+
+     &__content {
+          margin: 35px 0;
+     }
+
+
+}

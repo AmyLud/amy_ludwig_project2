@@ -16,8 +16,8 @@ html {
 // wrapper Globals
 
 .wrapper {
-     border: 1px solid red;
-     width: 80%;
+     // border: 1px solid red;
+     width: 90%;
      margin: 0 auto;
 }
 
@@ -26,6 +26,8 @@ html {
 .content,
 .copyright {
      @include content-font(2rem);
+     letter-spacing: 1px;
+     line-height: 3rem;
 }
 
 .title--small {
@@ -65,7 +67,8 @@ html {
      color: $lightColor;
      padding: 1px;
      &__message {
-          width: 30%;
+          width: 100%;
+          text-align: center;
           margin: 2px auto;
      }
 }

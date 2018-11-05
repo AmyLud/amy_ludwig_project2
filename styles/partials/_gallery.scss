@@ -1,0 +1,19 @@
+.gallery-section { 
+     &__banner {
+          width: 100%;
+          display: block;
+          background-position: bottom center;
+     }
+
+     .wrapper {
+          display: flex;
+          // flex-wrap: wrap;
+          justify-content: space-around;
+          padding: 100px 0;
+     }
+     &__pic {
+          display: block;
+          margin: 20px;
+          // flex-basis: 1 0 35%;
+     }
+}
