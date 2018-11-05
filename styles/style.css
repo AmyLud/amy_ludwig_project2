@@ -143,7 +143,7 @@ html {
     list-style: none; }
 
 .wrapper {
-  width: 90%;
+  width: 85%;
   margin: 0 auto; }
 
 .content,
@@ -172,13 +172,13 @@ html {
   font-family: "AbrilFatface", serif;
   color: #f6f6f6;
   font-size: 8rem;
-  letter-spacing: 1px; }
+  text-transform: uppercase; }
 
 .main-title--main-page {
   font-family: "AbrilFatface", serif;
   color: #f6f6f6;
-  font-size: 20rem;
-  letter-spacing: 1px;
+  font-size: 14rem;
+  text-transform: uppercase;
   line-height: 20rem; }
 
 .more-button {
@@ -206,11 +206,32 @@ html {
 
 .header--main {
   background: #345231; }
+  .header--main .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .header--main .willow-pic__img {
+    display: block;
+    width: 100%;
+    -webkit-box-shadow: 20px 20px 0 white;
+    box-shadow: 20px 20px 0 white;
+    position: relative;
+    top: 75px; }
 
 .main-title__prefix {
+  position: absolute;
+  left: -65px;
+  top: -20px; }
+
+.main-title--main-page {
   position: relative;
-  left: 75px;
-  bottom: 25px; }
+  padding: 0;
+  margin-left: 30px; }
 
 .top-bar {
   border: 1px solid red;

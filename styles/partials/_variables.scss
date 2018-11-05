@@ -8,7 +8,8 @@ $lightColor: #f6f6f6;
      font-family: "AbrilFatface", serif;
      color: $lightColor;
      font-size: $size;
-     letter-spacing: 1px;
+     // letter-spacing: 1px;
+     text-transform: uppercase;
 }
 
 @mixin title-font($size) {

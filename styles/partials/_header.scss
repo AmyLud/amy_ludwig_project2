@@ -1,11 +1,37 @@
 .header--main {
      background: $primeColor;
-}
-.main-title {
-     
-     &__prefix {
+     .wrapper {
+          // border: 1px dashed white;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+     }
+     .willow-pic {
+          // flex: 1 0 350px;
+     }
+     .willow-pic__img {
+          display: block;
+          width: 100%;
+          box-shadow: 20px 20px 0 white;
           position: relative;
-          left: 75px;
-          bottom: 25px;
+          top: 75px;
+     }
+}
+
+.main-title {
+     &__prefix {
+          position: absolute;
+          left: -65px;
+          top: -20px;
+          // border: 1px solid red;
+     }
+     &--main-page {
+          // border: 1px solid blue;
+          position: relative;
+          padding: 0;
+          margin-left: 30px;
+          // flex: 1 0 400px;
+
+
      }
 }

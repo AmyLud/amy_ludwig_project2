@@ -17,7 +17,7 @@ html {
 
 .wrapper {
      // border: 1px solid red;
-     width: 90%;
+     width: 85%;
      margin: 0 auto;
 }
 
@@ -43,7 +43,7 @@ html {
      @include header-font(8rem);
 }
 .main-title--main-page {
-     @include header-font(20rem);
+     @include header-font(14rem);
      line-height: 20rem;
 }
 
