@@ -1,6 +1,6 @@
 .blog-section {
      &__post {
-          // border: 1px dashed black;
+          border: 1px dashed black;
           // margin: 20px 0;
           display: flex;
           flex-wrap: wrap;
@@ -14,7 +14,7 @@
           flex-direction: row-reverse;
      }
      &__description {
-          flex: 1 0 500px;
+          flex: 2 0 500px;
           padding: 25px 75px;
           display: flex;
           flex-direction: column;
@@ -31,8 +31,9 @@
      }
 
      &__picture {
+          // border: 1px solid red;
           flex: 1 0 500px;
-          width: 50%;
+          min-width: 50%;
           position: relative;
           &--left {
                top: -50px;
@@ -54,7 +55,7 @@
 
      &__img {
           display: block;
-          width: 85%;
+          width: 90%;
           position: relative;
           top: -20px;
           left: -20px;

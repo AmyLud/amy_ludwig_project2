@@ -5,6 +5,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <title>Willow's Blog</title>
+     <script type="javascript" src="comment.js"></script>
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
           crossorigin="anonymous">
      <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:400,700" rel="stylesheet">
@@ -31,7 +32,6 @@
      </header>
      <main class="background blog">
           <div class="wrapper">
-
                <section class="blog-section">
                     <div class="blog__post">
                          <h2 class="title--small">My favourite travel destinations</h2>
@@ -43,38 +43,64 @@
                          <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem necessitatibus eaque quia, omnis iure voluptates ad mollitia quae temporibus, officia alias cum in doloribus quod velit accusantium natus possimus totam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos excepturi, fugit iure nihil eveniet accusamus possimus ratione autem aut laborum amet! Corporis nobis nihil a voluptatem maiores voluptatum commodi deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aspernatur impedit dolorem cum quibusdam similique error nisi accusamus, praesentium, dolores nesciunt officiis magni dolor rem pariatur, quidem cupiditate enim eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit vero temporibus odio beatae adipisci sed explicabo dolorum incidunt, ex placeat ratione ab et harum fugiat amet! Dolorum amet et rem?</p>
                          <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, voluptatibus consequuntur deserunt mollitia laborum fuga exercitationem beatae eos, similique maxime officiis! Perspiciatis asperiores minus exercitationem itaque vero natus atque eaque?</p>
                     </div>
-                    <div class="blog__comment">
-                         <div class="comment__pic">
-                              <img src="styles/assets/blog-image-3.jpg" alt="Commenter Photo" class="comment__img">
+                    <div class="blog__comments">
+                         <div class="blog__comment">
+                              <div class="blog__comment-pic">
+                                   <img src="styles/assets/blog-image-3.jpg" alt="Commenter Photo" class="blog__comment-img">
+                              </div>
+                              <div class="blog__comment-content">
+                                   <p class="content">Tuesday November 6th, 2018 by Barb</p>
+                                   <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, voluptatibus consequuntur deserunt mollitia laborum fuga exercitationem beatae eos, similique maxime officiis! Perspiciatis asperiores minus exercitationem itaque vero natus atque eaque?</p>
+                              </div>
                          </div>
-                         <p class="content">Tuesday November 6th, 2018 by Barb</p>
-                         <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, voluptatibus consequuntur deserunt mollitia laborum fuga exercitationem beatae eos, similique maxime officiis! Perspiciatis asperiores minus exercitationem itaque vero natus atque eaque?</p>
+                         <div class="blog__comment blog__comment">
+                              <div class="blog__comment-pic">
+                                   <img src="styles/assets/blog-image-4.jpg" alt="Commenter Photo" class="blog__comment-img">
+                              </div>
+                              <div class="blog__comment-content">
+                                   <p class="content">Monday November 5th, 2018 by Daisy</p>
+                                   <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, voluptatibus consequuntur
+                                        deserunt mollitia laborum fuga exercitationem beatae eos, similique maxime officiis! Perspiciatis asperiores
+                                        minus exercitationem itaque vero natus atque eaque?</p>
+                              </div>
+                         </div>
+                         <!-- <div class="blog__comment blog__comment">
+                              <div class="blog__comment-pic">
+                                   <img src="styles/assets/blog-image-4.jpg" alt="Commenter Photo" class="blog__comment-img">
+                              </div>
+                              <div class="blog__comment-content">
+                                   <p class="content">Monday November 5th, 2018 by Daisy</p>
+                                   <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, voluptatibus consequuntur
+                                        deserunt mollitia laborum fuga exercitationem beatae eos, similique maxime officiis! Perspiciatis asperiores
+                                        minus exercitationem itaque vero natus atque eaque?</p>
+                              </div>
+                         </div> -->
                     </div>
-                    <div class="blog__comment">
-                         <div class="comment__pic">
-                              <img src="styles/assets/blog-image-4.jpg" alt="Commenter Photo" class="comment__img">
-                         </div>
-                         <p class="content">Monday November 5th, 2018 by Daisy</p>
-                         <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, voluptatibus consequuntur deserunt mollitia laborum fuga exercitationem beatae eos, similique maxime officiis! Perspiciatis asperiores minus exercitationem itaque vero natus atque eaque?</p>
+                    <div class="contact-me">
+                         <form class="contact-me__form" action="POST">
+                              <div class="contact-me__details">
+                                   <input class="contact-me__input" type="text" id="name" placeholder="Name">
+                                   <label class="visually-hidden" for="name">Name</label>
+                                   <input class="contact-me__input" type="email" id="email" placeholder="Email Address">
+                                   <label class="visually-hidden" for="email">Email Address</label>
+                              </div>
+                              <textarea class="contact-me__input--large" type="text" id="comment" placeholder="Comment"></textarea>
+                              <label class="visually-hidden"for="comment">Message</label>
+                              <!-- <input type="submit" value="Post Comment" class="more-button"> -->
+                              <button class="more-button" id="submit">Post Comment</button>
+                         </form>
                     </div>
-                    <form class="contact-me" action="Post">
-                         <div class="contact-me__details">
-                              <input class="contact-me__input" type="text" id="name" placeholder="Name">
-                              <label class="visually-hidden" for="name">Name</label>
-                              <input class="contact-me__input" type="email" id="email" placeholder="Email Address">
-                              <label class="visually-hidden" for="email">Email Address</label>
-                         </div>
-                         <input class="contact-me__input--large" type="text" id="comment" placeholder="Comment">
-                         <label class="visually-hidden" for="comment">Message</label>
-                         
-                         <button class="more-button">Post Comment</button>
-                    </form>
                </section>
                <aside class="aside">
                     <div class="aside__about">
-                         <img src="styles/assets/blog-image-2.jpg" alt="willow staring at the camera like there's a burger behind the lens">
-                         <h3 class="subtitle--small">About Willow</h3>
-                         <p class="content aside__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias iure, atque beatae libero architecto. <a class="content__link"href="#">Find out more.</a></p>
+                         <div class="aside__about-pic">
+                              <img class="aside__about-img" src="styles/assets/blog-image-2.jpg" alt="willow staring at the camera like there's a burger behind the lens">
+                         </div>
+                          <div class="aside__about-info">
+                                   <h3 class="subtitle--small">About Willow</h3>
+                                   <p class="content aside__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias iure, atque
+                                        beatae libero architecto. <a class="content__link" href="#">Find out more.</a></p>
+                         </div>
                     </div>
                     <div class="aside__posts">
                          <h3 class="subtitle--small">Recent Posts</h3>
@@ -86,6 +112,7 @@
                          </ul>
                     </div>
                </aside>
+
           </div>
      </main>
      <footer>
@@ -94,5 +121,4 @@
           </div>
      </footer>
 </body>
-
 </html>

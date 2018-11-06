@@ -1,43 +1,85 @@
-section, aside {
-     border: 1px dashed black;
-     // width: 50%;
-}
 
 .blog {
      .wrapper {
           display: flex;
           flex-direction: row-reverse;
+          flex-wrap: wrap; 
           // padding: 0;
      }
      .blog-section {
-          flex: 2 0 600px;
+          flex: 2 0 500px;
+          margin-bottom: 25px;
+
+          .title--small {
+          margin: 0;
+          }
      }
      &__post,
      &__comment {
-          border: 1px solid red;
+          // border: 1px solid red;
           background: white;
+          padding: 30px;
+          margin-bottom: 25px;
      }
+     &__post,
+     &__comment:last-child {
+          border-bottom: 5px solid $secondColor;
+          margin-bottom: 0;
+     }
+     &__comments {
+          // border: 1px solid blue;
+          margin: 25px 0;
+     }
+     &__comment {
+          // border: 1px solid red;
+          display: flex;
+          padding: 30px 20px;
+          &-pic {
+               // border: 1px solid blue;
+               padding: 0 20px;
+          }
+          &-img {
+               display: block;
+          }
+          &-content {
+               // border: 1px solid blue;
+               .content {
+                    margin: 10px 0;
+               }
 
-     .title--large {
-          margin: 10px;
+          }
      }
 
      .aside {
           flex: 1 0 175px;
+          // margin-right: 30px;
+          padding-right: 30px; 
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
           &__about,
           &__posts {
-               border: 1px solid red;
                background: white;
                margin-bottom: 25px; 
-               padding: 25px;
+               padding: 30px;
+               // flex: 0 0 200px; 
                
           }
 
           &__about {
-               .content__link {
-                    color: $secondColor;
-                    font-weight: bold;
-               }
+               // flex: 2 0 200px;
+          }
+          &__about-pic {
+               width: 100%;
+          }
+
+          &__about-img {
+               // border: 1px solid red;
+               display: block;
+          }
+          .content__link {
+               color: $secondColor;
+               font-weight: bold;
           }
 
           &__list-item::before {

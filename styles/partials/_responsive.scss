@@ -1,0 +1,130 @@
+// Nav can be good until 670px
+
+//CONTACT -- 917px  index--1010px(articles, header change bg, gallery margins 0 and remove wrapper)
+
+@media (max-width: 1060px) {
+     .blog {
+          .wrapper {
+               display: block;
+          }
+          .aside {
+               padding: 0;
+               display: flex;
+               flex-direction: row;
+               justify-content: space-between;
+
+               &__about, 
+               &__posts {
+                    width: 48%;
+                    border-top: 5px solid $secondColor;
+               }
+
+               &__about-pic {
+                    display: none;
+               }
+          }
+
+     }
+     
+     .header--main {
+
+          .main-title-wrap {
+               // border: 1px solid red;
+               // width: 50%;
+          }
+     
+          .willow-pic {
+               max-width: 100%;
+               width: fit-content;
+          }
+          .willow-pic__img {
+          display: block;
+          position: relative;
+          top: 60px;
+          max-width: 100%;
+          box-shadow: 20px 20px 0 white;
+     }
+}
+     
+}
+
+@media (max-width: 1010px) {
+     .header--main {
+          background: url(assets/home-image-1.jpg);
+          // background: linear-gradient(to right, rgba(0, 0, 0, 0.1), black);
+          background-size: cover;
+          background-position: center;
+          .willow-pic__img {
+          display: none;
+          }
+          .wrapper {
+               width: 100%;
+               // border: 1px solid white;
+               height: 100%;
+               align-items: center;
+               justify-content: center;
+               background: linear-gradient(to top, rgba(0,0,0,0.5))
+          }
+
+          .main-title {
+
+               &-wrap { 
+                    max-width: 100%;
+                    font-size: 8rem;
+               }
+          }
+
+     }
+
+     .blog-section {
+          &__picture {
+               position: static;
+               margin: 20px 0;
+          }
+     }
+
+
+     .journey-section {
+          padding: 50px 0;
+          .wrapper {
+               width: 100%;
+               padding: 30px;
+          }
+
+     }
+
+}
+
+@media (max-width: 920px) {
+     .contact-page {
+          .wrapper {
+               display: block;
+
+          }
+          .contact-info {
+               width: 100%;
+               margin-bottom: 30px;
+               border-bottom: 5px solid $secondColor;
+
+          }
+     }
+
+     .gallery-section {
+          .wrapper {
+               width: 100%;
+               padding: 0;
+          }
+     }
+
+     .journey-section {
+          .wrapper {
+               // working on making this section look good
+          }
+     }
+
+     
+}
+
+
+
+

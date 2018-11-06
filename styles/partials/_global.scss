@@ -50,6 +50,11 @@ html {
 
 // Button Global
 
+.contact-me__input {
+     @include content-font(2rem);
+}
+
+
 .more-button {
      width: fit-content;
      background: $accentColor;
@@ -62,6 +67,7 @@ html {
 
      }
 }
+
 
 .copyright {
      background: $deepColor;
