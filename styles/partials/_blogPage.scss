@@ -1,0 +1,54 @@
+section, aside {
+     border: 1px dashed black;
+     // width: 50%;
+}
+
+.blog {
+     .wrapper {
+          display: flex;
+          flex-direction: row-reverse;
+          // padding: 0;
+     }
+     .blog-section {
+          flex: 2 0 600px;
+     }
+     &__post,
+     &__comment {
+          border: 1px solid red;
+          background: white;
+     }
+
+     .title--large {
+          margin: 10px;
+     }
+
+     .aside {
+          flex: 1 0 175px;
+          &__about,
+          &__posts {
+               border: 1px solid red;
+               background: white;
+               margin-bottom: 25px; 
+               padding: 25px;
+               
+          }
+
+          &__about {
+               .content__link {
+                    color: $secondColor;
+                    font-weight: bold;
+               }
+          }
+
+          &__list-item::before {
+               content: "•";
+               position: relative;
+               font-size: 1.4rem;
+               right: 15px;
+          }
+
+          .subtitle--small {
+               @include title-font(2.4rem);
+          }
+     }
+}

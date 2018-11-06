@@ -1,0 +1,85 @@
+section {
+     // border: 1px dashed black;
+}
+.background {
+     background: $lightColor;
+     .wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: 100px 0;
+     }
+}
+
+.contact-info {
+     flex: 1 0 250px;
+     margin: 0 30px 25px 0;
+
+     // margin: 10px;
+     // height: 30vh;
+     .social-link {
+          color: $primeColor;
+          padding: 10px;
+          font-size: 3rem; 
+     }
+     .info-box {
+          // border: 1px solid red;
+          padding: 30px 20px;
+          background: white;
+     }
+     .info-box__info {
+          margin: 0;
+          padding: 0 10px;
+          &--bold {
+               font-weight: bold;
+               padding: 0 10px;
+          }
+     }
+}
+
+
+.contact-me {
+     flex: 2 0 500px;
+     // display: flex;
+     // flex-direction: column;
+
+     .more-button {
+          @extend .more-button__link;
+          width: 100%;
+          border: none;
+          height: 50px;
+     }
+     
+     &__details {
+          display: flex;
+          justify-content: space-between;
+     }
+     
+     &__input {
+          display: block;
+          border: none;
+          margin-bottom: 10px;
+          width: calc(50% - 10px);
+          height: 75px;
+          padding: 20px;
+          
+          
+          &--large {
+               @extend .contact-me__input;
+               width: 100%;
+               height: 300px;
+          }
+     }
+     .visually-hidden:not(:focus):not(:active) {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          border: 0;
+          padding: 0;
+          white-space: nowrap;
+          clip-path: inset(100%);
+          clip: rect(0 0 0 0);
+          overflow: hidden;
+     }
+}

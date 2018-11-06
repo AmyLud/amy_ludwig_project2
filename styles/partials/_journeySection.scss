@@ -2,8 +2,9 @@
      background: $lightColor;
      padding: 100px 0;
      .wrapper {
-          border: 1px dashed black; 
+          // border: 1px dashed black; 
           display: flex;
+          align-items: center;
           justify-content: space-between;
           flex-wrap: wrap;
 
@@ -11,7 +12,7 @@
 
      &__pic {
           // border: 1px solid green;
-          flex: 0 0 280px;
+          flex: 0 0 300px;
      }
 
      &__img {

@@ -18,6 +18,7 @@ html {
 .wrapper {
      // border: 1px solid red;
      width: 85%;
+     max-width: 1240px;
      margin: 0 auto;
 }
 
@@ -50,7 +51,7 @@ html {
 // Button Global
 
 .more-button {
-     display: inline-block;
+     width: fit-content;
      background: $accentColor;
      &__link {
           display: block;
