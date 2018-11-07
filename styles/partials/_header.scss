@@ -54,12 +54,11 @@
      flex-direction: column;
      justify-content: space-between;
      .wrapper {
-          // border: 1px solid red;
+          height: 100%;
           padding: 0;
           display: flex;
           flex-direction: column;
           justify-content: flex-end;
-          // position: relative;
      }
      .main-title {
           line-height: 7rem;

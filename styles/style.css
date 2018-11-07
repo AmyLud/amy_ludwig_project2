@@ -302,6 +302,7 @@ html {
   justify-content: space-between; }
   .header--small-plants .wrapper,
   .header--large-plants .wrapper {
+    height: 100%;
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -325,7 +326,10 @@ html {
   background-size: cover; }
 
 .top-bar {
-  background: #345231; }
+  background: #345231;
+  position: fixed;
+  width: 100%;
+  z-index: 10; }
   .top-bar .top-nav {
     padding: 0;
     width: 650px;
@@ -875,41 +879,37 @@ html {
     width: 100%; }
   .gallery-section__pic {
     margin: 0; }
-  .top-bar {
-    position: fixed;
+  .top-bar .top-bar-nav {
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    background: #345231;
     width: 100%;
-    z-index: 10; }
-    .top-bar .top-bar-nav {
-      max-height: 0;
-      overflow: hidden;
-      position: absolute;
-      background: #345231;
-      width: 100%;
-      -webkit-transition: max-height 0.5s;
-      -o-transition: max-height 0.5s;
-      transition: max-height 0.5s; }
-    .top-bar .top-nav {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      padding: 0;
-      width: 100%; }
-      .top-bar .top-nav__link--large, .top-bar .top-nav__item--large {
-        display: none; }
-      .top-bar .top-nav__item {
-        margin: 5px 0;
-        padding-left: 10px; }
-    .top-bar .menu-toggle:checked ~ .top-bar-nav {
-      max-height: 200px;
-      overflow: auto;
-      -webkit-transition: max-height 0.5s;
-      -o-transition: max-height 0.5s;
-      transition: max-height 0.5s; }
-    .top-bar .menu-button {
+    -webkit-transition: max-height 0.5s;
+    -o-transition: max-height 0.5s;
+    transition: max-height 0.5s; }
+  .top-bar .top-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0;
+    width: 100%; }
+    .top-bar .top-nav__link--large, .top-bar .top-nav__item--large {
+      display: none; }
+    .top-bar .top-nav__item {
+      margin: 5px 0;
+      padding-left: 10px; }
+  .top-bar .menu-toggle:checked ~ .top-bar-nav {
+    max-height: 200px;
+    overflow: auto;
+    -webkit-transition: max-height 0.5s;
+    -o-transition: max-height 0.5s;
+    transition: max-height 0.5s; }
+  .top-bar .menu-button {
+    display: block; }
+    .top-bar .menu-button__container {
       display: block; }
-      .top-bar .menu-button__container {
-        display: block; }
   .header--small-plants .wrapper,
   .header--large-plants .wrapper {
     height: 100%; } }

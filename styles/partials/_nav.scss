@@ -1,8 +1,10 @@
 
 
 .top-bar {
-     // border: 1px solid red;
      background: $primeColor;
+     position: fixed;
+     width: 100%;
+     z-index: 10;
      .top-nav {
           padding: 0;    
           // border: 1px dashed white;
