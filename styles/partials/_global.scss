@@ -75,6 +75,25 @@ html {
 }
 
 
+.skip-link {
+     @include content-font(2.3rem);
+     text-transform: uppercase;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    left: -2000px;
+    top: 10px;
+    z-index: 100;
+    background: $primeColor;
+    color: $lightColor;
+    &:focus {
+          left: 0px;
+          outline: none;
+          text-decoration: underline;
+
+     }
+}
 
 
 .copyright {

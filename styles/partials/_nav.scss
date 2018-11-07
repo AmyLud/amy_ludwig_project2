@@ -1,17 +1,5 @@
 
-.skip-link {
-     @include content-font(3rem);
-    position: absolute;
-    left: -1000px;
-    top: 5px;
-    z-index: 100;
-    background: $primeColor;
-    color: $accentColor;
-}
 
-.skip-link:focus {
-    left: 20;
-}
 .top-bar {
      // border: 1px solid red;
      background: $primeColor;

@@ -216,6 +216,25 @@ html {
       background: #345231;
       color: #f6f6f6; }
 
+.skip-link {
+  font-family: "montserrat", sans-serif;
+  color: #1f1f1f;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  left: -2000px;
+  top: 10px;
+  z-index: 100;
+  background: #345231;
+  color: #f6f6f6; }
+  .skip-link:focus {
+    left: 0px;
+    outline: none;
+    text-decoration: underline; }
+
 .copyright {
   background: #1f1f1f;
   color: #f6f6f6;
@@ -304,20 +323,6 @@ html {
 .header--small-plants {
   background: url(assets/blog-image-1.jpg);
   background-size: cover; }
-
-.skip-link {
-  font-family: "montserrat", sans-serif;
-  color: #1f1f1f;
-  font-size: 3rem;
-  position: absolute;
-  left: -1000px;
-  top: 5px;
-  z-index: 100;
-  background: #345231;
-  color: #e4a436; }
-
-.skip-link:focus {
-  left: 20; }
 
 .top-bar {
   background: #345231; }
