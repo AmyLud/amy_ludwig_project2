@@ -1,6 +1,5 @@
 // Nav can be good until 670px
 
-//CONTACT -- 917px  index--1010px(articles, header change bg, gallery margins 0 and remove wrapper)
 
 @media (max-width: 1060px) {
      .blog {
@@ -80,7 +79,9 @@
           &__picture {
                position: static;
                margin: 20px 0;
+               max-width: 80%;
           }
+          
      }
 
 
@@ -96,6 +97,17 @@
 }
 
 @media (max-width: 920px) {
+     .main-title {
+          &--main-page {
+               font-size: 10rem;
+          }
+          &__prefix {
+          max-width: 120px;
+          left: -15px;
+          top: -30px;
+     }
+
+     }
      .contact-page {
           .wrapper {
                display: block;
@@ -118,7 +130,57 @@
 
      .journey-section {
           .wrapper {
+               display: block;
+               margin: 0 auto;
                // working on making this section look good
+          }
+
+          &__pic {
+               width: 60%;
+               margin: 0 auto;
+               padding: 0;
+
+          }
+          &__img {
+               box-shadow: -20px -20px 0 $secondColor,
+                              20px 20px 0 $secondColor;
+
+          }
+          &__description {
+               margin: 50px 0 0;
+               text-align: center;
+          }
+
+          .more-button {
+               margin: 0 auto;
+          }
+     }
+
+     .about-section {
+          padding: 50px 20px;
+     }
+
+     .blog-section {
+          &__picture {
+               position: static;
+               margin: 0;
+               max-width: 100%;
+
+          }
+          &__img {
+               position: static;
+               // width: 100%;
+          }
+
+          &__description,
+          &__description--right {
+               text-align: center;
+               align-items: center;
+          }
+
+          &__content--left, 
+          &__content--right {
+               width: 100%;
           }
      }
 

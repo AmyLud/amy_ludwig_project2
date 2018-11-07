@@ -27,5 +27,34 @@
           &__link--active {
                color: $accentColor;
           }
-     }    
+
+          
+     }
+     // prep responsive nav
+
+
+     .menu-button {
+          margin: 10px;
+          &-icon {
+               color: $lightColor;
+          }
+          &__container {
+               font-size: 5rem;
+               padding: 5px 10px;
+               cursor: pointer;
+               display: none;
+          }
+          
+
+     }
+
+     .hidden {
+          position: fixed;
+          top: -100%;
+          left: -100%;
+     }
+
+     
+
+
 }    

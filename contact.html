@@ -13,15 +13,21 @@
 <body>
      <header class="header--large-plants">
           <div class="top-bar">
-               <nav class="top-bar-nav">
-                    <ul class="top-nav">
-                         <li class="top-nav__item"><a href="#" class="top-nav__link">Home</a></li>
-                         <li class="top-nav__item"><a href="#about" class="top-nav__link">About</a></li>
-                         <li class="top-nav__item"><a href="#" class="top-nav__link--large">Willow</a></li>
-                         <li class="top-nav__item"><a href="#" class="top-nav__link">Blog</a></li>
-                         <li class="top-nav__item"><a href="#" class="top-nav__link top-nav__link--active">Contact</a></li>
-                    </ul>
-               </nav>
+               <div class="relativebar">
+                    <input class="menu-toggle hidden" id="menu-toggle" type="checkbox" />
+                    <label class='menu-button__container' for="menu-toggle">
+                         <i class="fas fa-bars menu-button-icon"></i>
+                    </label>
+                    <nav class="top-bar-nav">
+                         <ul class="top-nav">
+                              <li class="top-nav__item"><a href="#" class="top-nav__link top-nav__link--active">Home</a></li>
+                              <li class="top-nav__item"><a href="#about" class="top-nav__link">About</a></li>
+                              <li class="top-nav__item top-nav__item--large"><a href="#" class="top-nav__link top-nav__link--large">Willow</a></li>
+                              <li class="top-nav__item"><a href="#" class="top-nav__link">Blog</a></li>
+                              <li class="top-nav__item"><a href="#" class="top-nav__link">Contact</a></li>
+                         </ul>
+                    </nav>
+               </div>
           </div>
           <div class="wrapper">
                <h1 class="main-title">Contact Me</h1>
