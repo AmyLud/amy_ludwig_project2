@@ -15,10 +15,14 @@
           &__link {
                display: block;
                @include content-font(1.8rem);
-               color: white;
+               color: $lightColor;
                text-transform: uppercase;
                font-weight: bold;
                letter-spacing: 1px;
+               transition: color 0.2s;
+               &:hover {
+                    color: $deepColor;
+               }
           }
           &__link--large {
                @include title-font(3.2rem);
@@ -37,13 +41,24 @@
           margin: 10px;
           &-icon {
                color: $lightColor;
+               transition: color 0.1s;
           }
+
           &__container {
                font-size: 5rem;
                padding: 5px 10px;
                cursor: pointer;
                display: none;
                max-width: 100%;
+               // border: 1px solid red;
+               transition: background 0.1s;
+               &:hover{
+
+                    background: $accentColor;
+               }
+               &:hover .menu-button-icon {
+                    color: $deepColor;
+               }
           }
           
 

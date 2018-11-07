@@ -195,9 +195,9 @@ html {
 .more-button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
-  width: fit-content;
-  background: #e4a436; }
+  width: fit-content; }
   .more-button__link, .contact-me .more-button {
+    background: #e4a436;
     display: block;
     padding: 10px 20px;
     font-weight: bold;
@@ -207,7 +207,13 @@ html {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    -webkit-transition: background 0.1s, color 0.1s;
+    -o-transition: background 0.1s, color 0.1s;
+    transition: background 0.1s, color 0.1s; }
+    .more-button__link:hover, .contact-me .more-button:hover {
+      background: #345231;
+      color: #f6f6f6; }
 
 .copyright {
   background: #1f1f1f;
@@ -317,10 +323,15 @@ html {
       font-family: "montserrat", sans-serif;
       color: #1f1f1f;
       font-size: 1.8rem;
-      color: white;
+      color: #f6f6f6;
       text-transform: uppercase;
       font-weight: bold;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      -webkit-transition: color 0.2s;
+      -o-transition: color 0.2s;
+      transition: color 0.2s; }
+      .top-bar .top-nav__link:hover {
+        color: #1f1f1f; }
     .top-bar .top-nav__link--large {
       font-family: "AbrilFatface", serif;
       color: #1f1f1f;
@@ -334,13 +345,23 @@ html {
   .top-bar .menu-button {
     margin: 10px; }
     .top-bar .menu-button-icon {
-      color: #f6f6f6; }
+      color: #f6f6f6;
+      -webkit-transition: color 0.1s;
+      -o-transition: color 0.1s;
+      transition: color 0.1s; }
     .top-bar .menu-button__container {
       font-size: 5rem;
       padding: 5px 10px;
       cursor: pointer;
       display: none;
-      max-width: 100%; }
+      max-width: 100%;
+      -webkit-transition: background 0.1s;
+      -o-transition: background 0.1s;
+      transition: background 0.1s; }
+      .top-bar .menu-button__container:hover {
+        background: #e4a436; }
+      .top-bar .menu-button__container:hover .menu-button-icon {
+        color: #1f1f1f; }
   .top-bar .hidden {
     position: fixed;
     top: -100%;
@@ -507,7 +528,12 @@ html {
     -ms-flex-pack: center;
     justify-content: center;
     font-size: 2rem;
-    color: #1f1f1f; }
+    color: #1f1f1f;
+    -webkit-transition: color 0.1s;
+    -o-transition: color 0.1s;
+    transition: color 0.1s; }
+    .info-section__icon-link:hover {
+      color: #f6f6f6; }
   .info-section__cell {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -837,7 +863,7 @@ html {
       max-height: 0;
       overflow: hidden;
       position: absolute;
-      background: #709b6b;
+      background: #345231;
       width: 100%;
       -webkit-transition: max-height 0.5s;
       -o-transition: max-height 0.5s;

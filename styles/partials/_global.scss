@@ -57,16 +57,23 @@ html {
 
 .more-button {
      width: fit-content;
-     background: $accentColor;
      &__link {
+          background: $accentColor;
           display: block;
           padding: 10px 20px;
           font-weight: bold;
           @include title-font(20px);
           text-transform: uppercase;
+          transition: background 0.1s, color 0.1s;
+          &:hover {
+               background: $primeColor;
+               color: $lightColor;
+          }
 
      }
 }
+
+
 
 
 .copyright {

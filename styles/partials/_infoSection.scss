@@ -24,6 +24,10 @@
                justify-content: center;
                font-size: 2rem;
                color: $deepColor;
+               transition: color 0.1s;
+               &:hover {
+                    color: $lightColor;
+               }
      }
 
      &__cell {
