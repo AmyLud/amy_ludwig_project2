@@ -135,7 +135,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
   html body {
     font-size: 1.8rem; }
   html a {
@@ -298,11 +299,25 @@ html {
     line-height: 7rem;
     margin: 0;
     position: relative;
-    top: 17px; }
+    top: 15px; }
 
 .header--small-plants {
   background: url(assets/blog-image-1.jpg);
   background-size: cover; }
+
+.skip-link {
+  font-family: "montserrat", sans-serif;
+  color: #1f1f1f;
+  font-size: 3rem;
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 100;
+  background: #345231;
+  color: #e4a436; }
+
+.skip-link:focus {
+  left: 20; }
 
 .top-bar {
   background: #345231; }
@@ -330,7 +345,7 @@ html {
       -webkit-transition: color 0.2s;
       -o-transition: color 0.2s;
       transition: color 0.2s; }
-      .top-bar .top-nav__link:hover {
+      .top-bar .top-nav__link:hover:not(.top-nav__link--large) {
         color: #1f1f1f; }
     .top-bar .top-nav__link--large {
       font-family: "AbrilFatface", serif;

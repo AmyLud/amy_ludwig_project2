@@ -1,8 +1,22 @@
+
+.skip-link {
+     @include content-font(3rem);
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 100;
+    background: $primeColor;
+    color: $accentColor;
+}
+
+.skip-link:focus {
+    left: 20;
+}
 .top-bar {
      // border: 1px solid red;
      background: $primeColor;
      .top-nav {
-          padding: 0;
+          padding: 0;    
           // border: 1px dashed white;
           width: 650px;
           margin: 0 auto; 
@@ -20,7 +34,7 @@
                font-weight: bold;
                letter-spacing: 1px;
                transition: color 0.2s;
-               &:hover {
+               &:hover:not(.top-nav__link--large) {
                     color: $deepColor;
                }
           }
