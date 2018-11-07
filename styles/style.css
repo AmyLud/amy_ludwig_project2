@@ -255,7 +255,8 @@ html {
     justify-content: space-around;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    padding-top: 50px; }
   .header--main .willow-pic {
     max-width: 70%; }
   .header--main .willow-pic__img {
@@ -283,7 +284,7 @@ html {
 .main-title--main-page {
   line-height: 13rem;
   margin: 0;
-  padding: 10px; }
+  padding: 0; }
 
 .header--small-plants,
 .header--large-plants {

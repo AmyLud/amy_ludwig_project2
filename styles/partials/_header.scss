@@ -6,6 +6,7 @@
           display: flex;
           justify-content: space-around;
           align-items: center;
+          padding-top: 50px;
      }
      .willow-pic {
           max-width: 70%;
@@ -39,7 +40,7 @@
           // border: 1px solid blue;
           line-height: 13rem;
           margin: 0;
-          padding: 10px;
+          padding: 0;
      }
 }
 
@@ -48,7 +49,6 @@
 .header--large-plants {
      background: url(assets/contact-image-1.jpg);
      background-size: cover;
-     // background-repeat: no-repeat;
      height: 60vh;
      display: flex;
      flex-direction: column;
