@@ -1,0 +1,60 @@
+@media (max-width: 500px) {
+     .info-section {
+          &__content {
+               width: 80%;
+          }
+     }
+     .main-title {
+          &--main-page {
+               font-size: 6rem;
+          }
+          &__prefix {
+          max-width: 120px;
+          left: -10px;
+          top: -10px;
+          }
+     }
+     .header--small-plants,
+     .header--large-plants {
+
+          .main-title {
+               font-size: 6rem;
+               top: 20px;
+          }
+     }
+
+     .blog__comment-pic {
+          display: none;
+     }
+
+     .contact-me {
+     
+          &__details {
+               flex-direction: column;
+          }
+     
+          &__input {
+               width: 100%;         
+
+          }
+     }
+
+}
+
+@media (max-width: 400px) {
+     .info-section {
+          .wrapper {
+               margin: 0
+          }
+          &__content {
+               display: none;
+          }
+          &__cell {
+               margin: 10px 0;
+          }
+          .title--small {
+               line-height: 5.5rem;
+          }
+     }
+}
+
